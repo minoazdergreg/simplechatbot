@@ -1,0 +1,81 @@
+[
+    {
+      "response_type": "greeting",
+      "user_input": ["hello", "hi", "hey", "salem", "aslema", "bonjour", "bonsoir", "salut"],
+      "bot_response": "Hey there! How can I assist you?",
+      "required_words": []
+    },
+    {
+      "response_type": "greeting",
+      "user_input": ["see you", "goodbye", "bye"],
+      "bot_response": "See you later!",
+      "required_words": []
+    },
+    {
+      "response_type": "greeting",
+      "user_input": ["nice", "to", "meet", "you"],
+      "bot_response": "The pleasure is all mine!",
+      "required_words": ["nice", "meet", "you"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["is", "this", "chatbot", "really", "helpful"],
+      "bot_response": "Certainly, yes!",
+      "required_words": ["helpful", "really"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["how", "are", "you"],
+      "bot_response": "I'm great! Thanks for asking.",
+      "required_words": ["how", "are", "you"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["can", "you", "help", "me"],
+      "bot_response": "Certainly! How can I assist you?",
+      "required_words": ["help", "me"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["j'ai", "une", "erreur", "d'infrastructure"],
+      "bot_response": "Merci de me donner l'erreur d'infrastructure exacte.",
+      "required_words": ["infrastructure", "infra"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["j'ai", "une", "erreur", "d'application"],
+      "bot_response": "Merci de me donner l'erreur d'application exacte.",
+      "required_words": ["application", "app"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["UAT", "Broker", "Admin", "Access"],
+      "bot_response": "IL FAUT ÊTRE ADMIN POUR UTILISER BROKER ADMIN !",
+      "required_words": ["UAT", "Broker", "Admin", "Access"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["back", "office", "outage", "scenario"],
+      "bot_response": "To resolve the back office outage scenario, follow these steps:\n\n1. Update CLIENTS\n   Set STATUS_TYPE_ID=1, SUBMITTED_TO_BACKOFFICE=null\n   WHERE CLIENT_CODE = '-------'\n2. Update ACCOUNT_CREATION_REQUEST_ITEM\n   Set STATUS_TYPE_ID=1\n   WHERE STATUS_TYPE_ID = 3 and ACCOUNT_NO ='………'\n3. Open the admin portal and click the submit for authorization button (wait until the execution completes)\n4. Edit the following tables:\n   - CLIENTS\n     Set STATUS_TYPE_ID to 3\n   - ACCOUNT_CREATION_REQUEST_ITEM\n     Set STATUS_TYPE_ID to 3 only for the accounts edited in the first step (to prevent approving unverified accounts by compliance)\n5. Verify that the status is active in the admin portal, Sent_to_SFTP = Y, Trades_Ok = Y, and Welcome_email_sent = Y",
+      "required_words": ["back", "office", "outage", "scenario"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["sftp", "server"],
+      "bot_response": "To set up an SFTP server, follow these steps:\n\n1. Generate a public/private key pair\n   Make sure your device is connected to the internet and FortiClient is working\n   Download WinSCP from the official site\n   After downloading and installing, run WinSCP and click on Tools ➔ Run PuTTYgen\n   Set the number of bits to 4096, then click on generate\n   Ensure you keep moving the mouse in this area to speed up the process",
+      "required_words": ["sftp", "server"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["fidelity", "controller", "CountingPositionSpan", "job"],
+      "bot_response": "The functional solution should be implemented in the development environment.",
+      "required_words": ["fidelity", "controller", "CountingPositionSpan", "job"]
+    },
+    {
+      "response_type": "question",
+      "user_input": ["error", "job", "UbixController", "TransferPortfoliosFutureToStar"],
+      "bot_response": "Index and length must refer to a location within the string. Parameter name: length",
+      "required_words": ["error", "job", "UbixController"]
+    }
+  ]
+  
